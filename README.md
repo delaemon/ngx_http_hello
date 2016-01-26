@@ -1,4 +1,7 @@
 # ngx_http_hello
+
+
+## build
 ```
 $ git clone git@github.com:delaemon/ngx_http_hello.git
 $ cd nginx
@@ -11,4 +14,14 @@ $ sudo make install
 $ sudo /usr/local/nginx/sbin/nginx
 $ sudo /usr/local/nginx/sbin/nginx -s reload
 $ sudo /usr/local/nginx/sbin/nginx -s stop
+```
+
+## nginx.conf
+```
+    server {
+        listen       80;
+        server_name  localhost;
+        location / {
+          hello;
+        }
 ```
